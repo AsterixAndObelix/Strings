@@ -1,4 +1,6 @@
-text = open("T(10.30.27)-Text_Replacement_Text_File", "r")
+file = open("T(10.30.27)-Text_Replacement_Text_File", "r")
+
+text = file.read()
 
 print(text)
 
@@ -10,6 +12,7 @@ specials = {"lists" : noun , "strings" : noun , "tuples" : noun , "change" : ver
 
 for akey in specials:
     text = text.replace(akey, specials[akey])
-    print(text)
 
-text.close()
+print(text)
+
+file.close()
