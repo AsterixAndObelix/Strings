@@ -17,7 +17,11 @@ while happy == False:
 
     check = input("Are you happy?")
 
-    def reoccur(check, message):
+    def reoccur(check):
+        try:
+            print("Let's see.")
+        except incorrect:
+            print("I'm sorry.")
         if check == "Yes":
             happy = True
         elif check == "No":
